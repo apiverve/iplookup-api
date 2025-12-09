@@ -1,0 +1,75 @@
+openapi: 3.0.4
+info:
+  title: IP Lookup
+  description: IP Lookup is a simple tool for looking up the location of an IP address. It returns the country, city, and more.
+  termsOfService: https://apiverve.com/terms/
+  contact:
+    name: APIVerve Support
+    email: hello@apiverve.com
+    url: https://apiverve.com/contact
+  version: 1.0.9
+externalDocs:
+  description: Learn more about APIVerve
+  url: https://docs.apiverve.com?utm_source=openapi
+servers:
+- url: https://api.apiverve.com/
+paths:
+  /v1/iplookup:
+    get:
+      summary: Lookup IP
+      description: IP Lookup is a simple tool for looking up the location of an IP address. It returns the country, city, and more.
+      operationId: iplookup
+      parameters:
+      - name: ip
+        in: query
+        schema:
+          type: string
+        required: true
+        description: The IP address for which you want to get the location data (e.g., 173.172.81.20)
+        example: 173.172.81.20
+      responses:
+        '200':
+          description: Successful Response
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  status:
+                    type: string
+                    description: status
+                  error:
+                    type: string
+                    description: error
+                  data:
+                    type: string
+                    description: data
+              example:
+                status: ok
+                error: 
+                data:
+                  range:
+                  - 2913751040
+                  - 2913755135
+                  country: US
+                  region: MO
+                  timezone: America/Chicago
+                  city: Kansas City
+                  coordinates:
+                  - 39.0831
+                  - -94.5853
+                  ip: 173.172.81.20
+        '401':
+          description: Your request was not authorized, or your API Key was invalid
+        '404':
+          description: Requested resource was not found
+        '500':
+          description: A server error has occured, try again later
+components:
+  securitySchemes:
+    api_key:
+      type: apiKey
+      name: x-api-key
+      in: header
+security:
+- api_key: []
