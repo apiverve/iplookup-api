@@ -13,12 +13,7 @@ const API_URL = 'https://api.apiverve.com/v1/iplookup';
  */
 async function callIPLookupAPI() {
   try {
-    // Query parameters
-    const params &#x3D; new URLSearchParams({
-            ip: &#x27;173.172.81.20&#x27;
-        });
-
-    const response = await fetch(`${API_URL}?${params}`, {
+    const response = await fetch(API_URL, {
       method: 'GET',
       headers: {
         'x-api-key': API_KEY
