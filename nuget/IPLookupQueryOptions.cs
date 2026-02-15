@@ -12,7 +12,6 @@ namespace APIVerve.API.IPLookup
     {
         /// <summary>
         /// The IP address for which you want to get the location data (e.g., 173.172.81.20)
-        /// Example: 173.172.81.20
         /// </summary>
         [JsonProperty("ip")]
         public string Ip { get; set; }
