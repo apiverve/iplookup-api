@@ -228,8 +228,9 @@ from apiverve_iplookup.apiClient import IplookupAPIClient
 
 api = IplookupAPIClient("[YOUR_API_KEY]")
 
+query = { "ip": "173.172.81.20" }
+
 try:
-    query = { "ip": "173.172.81.20" }
     result = api.execute(query)
     print(result)
 finally:
