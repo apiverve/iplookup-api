@@ -2,8 +2,10 @@ openapi: 3.0.4
 info:
   title: IP Lookup
   description: >-
-    IP Lookup is a simple tool for looking up the location of an IP address. It
-    returns the country, city, and more.
+    IP Lookup resolves an IP address to its geographic location. It returns the
+    country, region, city, coordinates, postal code, timezone and continent,
+    along with an accuracy radius and an EU-membership flag for compliance
+    routing.
   termsOfService: https://apiverve.com/terms/
   contact:
     name: APIVerve Support
@@ -52,17 +54,21 @@ paths:
                 status: ok
                 error: null
                 data:
-                  range:
-                    - 2913751040
-                    - 2913755135
+                  ip: 173.172.81.20
                   country: US
+                  countryName: United States
                   region: MO
-                  timezone: America/Chicago
+                  regionName: Missouri
                   city: Kansas City
+                  continent: NA
+                  continentName: North America
+                  timezone: America/Chicago
                   coordinates:
                     - 39.0831
                     - -94.5853
-                  ip: 173.172.81.20
+                  postalCode: '64106'
+                  accuracyRadius: 20
+                  isEU: false
         '401':
           description: Your request was not authorized, or your API Key was invalid
         '404':
