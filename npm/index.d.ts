@@ -4,22 +4,40 @@ declare module '@apiverve/iplookup' {
     secure?: boolean;
   }
 
+  /**
+   * Describes fields the current plan does not unlock. Locked fields arrive as null
+   * in `data`; `locked_fields` names them, using dot paths for nested fields.
+   * Absent when the plan unlocks everything.
+   */
+  export interface PremiumInfo {
+    message: string;
+    upgrade_url: string;
+    locked_fields: string[];
+  }
+
   export interface iplookupResponse {
     status: string;
     error: string | null;
     data: IPLookupData;
     code?: number;
+    premium?: PremiumInfo;
   }
 
 
   interface IPLookupData {
-      range:       number[];
-      country:     string;
-      region:      string;
-      timezone:    string;
-      city:        string;
-      coordinates: number[];
-      ip:          string;
+      ip:             null | string;
+      country:        null | string;
+      countryName:    null | string;
+      region:         null | string;
+      regionName:     null | string;
+      city:           null | string;
+      continent:      null | string;
+      continentName:  null | string;
+      timezone:       null | string;
+      coordinates:    (number | null)[];
+      postalCode:     null | string;
+      accuracyRadius: number | null;
+      isEU:           boolean | null;
   }
 
   export default class iplookupWrapper {
