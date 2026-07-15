@@ -1,6 +1,6 @@
 # [IP Lookup API](https://iplookup.apiverve.com?utm_source&#x3D;github&amp;utm_medium&#x3D;readme)
 
-IP Lookup is a simple tool for looking up the location of an IP address. It returns the country, city, and more.
+IP Lookup resolves an IP address to its geographic location. It returns the country, region, city, coordinates, postal code, timezone and continent, along with an accuracy radius and an EU-membership flag for compliance routing.
 
 The IP Lookup API provides a simple, reliable way to integrate ip lookup functionality into your applications. Built for developers who need production-ready ip lookup capabilities without the complexity of building from scratch.
 
@@ -30,7 +30,11 @@ The IP Lookup API provides a simple, reliable way to integrate ip lookup functio
 ```javascript
 async function callIPLookupAPI() {
     try {
-        const response = await fetch('https://api.apiverve.com/v1/iplookup', {
+        const params = new URLSearchParams({
+            ip: '173.172.81.20'
+        });
+
+        const response = await fetch(`https://api.apiverve.com/v1/iplookup?${params}`, {
             method: 'GET',
             headers: {
                 'x-api-key': 'YOUR_API_KEY_HERE'
@@ -50,7 +54,7 @@ callIPLookupAPI();
 ### Using cURL
 
 ```bash
-curl -X GET "https://api.apiverve.com/v1/iplookup?param=value" \
+curl -X GET "https://api.apiverve.com/v1/iplookup?ip=173.172.81.20" \
   -H "x-api-key: YOUR_API_KEY_HERE"
 ```
 
@@ -150,7 +154,7 @@ go get github.com/apiverve/iplookup-api/go
 |---------|---------|
 | **Multi-language SDKs** | Native packages for JavaScript, Python, C#, Go, and Android |
 | **Simple Integration** | Single API key authentication, consistent response format |
-| **Production Ready** | 99.9% uptime, fast response times, used by thousands of developers |
+| **Production Ready** | 99.9% uptime SLA, served from 24 global regions |
 | **Comprehensive Docs** | Full examples, OpenAPI spec, and dedicated support |
 
 ---
@@ -169,7 +173,7 @@ go get github.com/apiverve/iplookup-api/go
 The IP Lookup API is commonly used for:
 
 - **Web Applications** - Add ip lookup features to your frontend or backend
-- **Mobile Apps** - Native SDKs for iOS and Android development
+- **Mobile Apps** - Native SDKs for Android development
 - **Automation** - Integrate with n8n, Zapier, or custom workflows
 - **SaaS Products** - Enhance your product with ip lookup capabilities
 - **Data Pipelines** - Process and analyze data at scale
