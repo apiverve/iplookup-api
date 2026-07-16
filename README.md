@@ -191,11 +191,43 @@ x-api-key: YOUR_API_KEY_HERE
 Get your API key: [https://apiverve.com](https://apiverve.com)
 
 ### Response Format
-All responses are JSON with this structure:
+
+Every APIVerve endpoint returns the same envelope — check `status`, then read `data`:
+
 ```json
 {
   "status": "ok",
+  "error": null,
   "data": { ... }
+}
+```
+
+### Example Response
+
+A real response from the IP Lookup API:
+
+```json
+{
+  "status": "ok",
+  "error": null,
+  "data": {
+    "ip": "173.172.81.20",
+    "country": "US",
+    "countryName": "United States",
+    "region": "MO",
+    "regionName": "Missouri",
+    "city": "Kansas City",
+    "continent": "NA",
+    "continentName": "North America",
+    "timezone": "America/Chicago",
+    "coordinates": [
+      39.0831,
+      -94.5853
+    ],
+    "postalCode": "64106",
+    "accuracyRadius": 20,
+    "isEU": false
+  }
 }
 ```
 
