@@ -25,29 +25,62 @@ namespace APIVerve.API.IPLookup
 
         [JsonProperty("data")]
         public Data Data { get; set; }
+
+        [JsonProperty("premium")]
+        public Premium Premium { get; set; }
     }
 
     public partial class Data
     {
-        [JsonProperty("range")]
-        public long[] Range { get; set; }
+        [JsonProperty("ip")]
+        public string Ip { get; set; }
 
         [JsonProperty("country")]
         public string Country { get; set; }
 
+        [JsonProperty("countryName")]
+        public string CountryName { get; set; }
+
         [JsonProperty("region")]
         public string Region { get; set; }
 
-        [JsonProperty("timezone")]
-        public string Timezone { get; set; }
+        [JsonProperty("regionName")]
+        public string RegionName { get; set; }
 
         [JsonProperty("city")]
         public string City { get; set; }
 
-        [JsonProperty("coordinates")]
-        public double[] Coordinates { get; set; }
+        [JsonProperty("continent")]
+        public string Continent { get; set; }
 
-        [JsonProperty("ip")]
-        public string Ip { get; set; }
+        [JsonProperty("continentName")]
+        public string ContinentName { get; set; }
+
+        [JsonProperty("timezone")]
+        public string Timezone { get; set; }
+
+        [JsonProperty("coordinates")]
+        public double?[] Coordinates { get; set; }
+
+        [JsonProperty("postalCode")]
+        public long? PostalCode { get; set; }
+
+        [JsonProperty("accuracyRadius")]
+        public long? AccuracyRadius { get; set; }
+
+        [JsonProperty("isEU")]
+        public bool? IsEu { get; set; }
+    }
+
+    public partial class Premium
+    {
+        [JsonProperty("message")]
+        public string Message { get; set; }
+
+        [JsonProperty("upgrade_url")]
+        public Uri UpgradeUrl { get; set; }
+
+        [JsonProperty("locked_fields")]
+        public string[] LockedFields { get; set; }
     }
 }
