@@ -70,6 +70,12 @@ namespace APIVerve.API.IPLookup
 
         [JsonProperty("isEU")]
         public bool? IsEu { get; set; }
+
+        [JsonProperty("asn")]
+        public string Asn { get; set; }
+
+        [JsonProperty("asnName")]
+        public string AsnName { get; set; }
     }
 
     public partial class Premium
