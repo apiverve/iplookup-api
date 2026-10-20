@@ -1,13 +1,13 @@
-# [IP Lookup API](https://iplookup.apiverve.com?utm_source&#x3D;github&amp;utm_medium&#x3D;readme)
+# [IP Lookup API](https://apiverve.com/marketplace/iplookup?utm_source&#x3D;github&amp;utm_medium&#x3D;referral&amp;utm_content&#x3D;readme)
 
-IP Lookup resolves an IP address to its geographic location. It returns the country, region, city, coordinates, postal code, timezone and continent, along with an accuracy radius and an EU-membership flag for compliance routing.
+IP Lookup is an IP address location API that resolves any IP to its country, region, timezone and continent. Paid plans add city, coordinates, postal code, an accuracy radius and an EU-membership flag for compliance routing.
 
 The IP Lookup API provides a simple, reliable way to integrate ip lookup functionality into your applications. Built for developers who need production-ready ip lookup capabilities without the complexity of building from scratch.
 
-**[View API Details →](https://iplookup.apiverve.com?utm_source&#x3D;github&amp;utm_medium&#x3D;readme)**
+**[View API Details →](https://apiverve.com/marketplace/iplookup?utm_source&#x3D;github&amp;utm_medium&#x3D;referral&amp;utm_content&#x3D;readme)**
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![API Status](https://img.shields.io/badge/Status-Active-green.svg)](https://iplookup.apiverve.com?utm_source&#x3D;github&amp;utm_medium&#x3D;readme)
+[![API Status](https://img.shields.io/badge/Status-Active-green.svg)](https://apiverve.com/marketplace/iplookup?utm_source&#x3D;github&amp;utm_medium&#x3D;referral&amp;utm_content&#x3D;readme)
 [![Method](https://img.shields.io/badge/Method-GET-blue.svg)](#)
 [![Platform](https://img.shields.io/badge/Platform-Multi--Platform-orange.svg)](#installation)
 
@@ -161,7 +161,7 @@ go get github.com/apiverve/iplookup-api/go
 
 ## Documentation
 
-- 🏠 **API Home:** [IP Lookup API](https://iplookup.apiverve.com?utm_source&#x3D;github&amp;utm_medium&#x3D;readme)
+- 🏠 **API Home:** [IP Lookup API](https://apiverve.com/marketplace/iplookup?utm_source&#x3D;github&amp;utm_medium&#x3D;referral&amp;utm_content&#x3D;readme)
 - 📚 **API Reference:** [docs.apiverve.com/ref/iplookup](https://docs.apiverve.com/ref/iplookup)
 - 📖 **OpenAPI Spec:** [openapi.yaml](./openapi.yaml)
 - 💡 **Examples:** [examples/](./examples/)
@@ -226,7 +226,9 @@ A real response from the IP Lookup API:
     ],
     "postalCode": "64106",
     "accuracyRadius": 20,
-    "isEU": false
+    "isEU": false,
+    "asn": "AS11427",
+    "asnName": "TWC-11427-TEXAS"
   }
 }
 ```
@@ -235,7 +237,7 @@ A real response from the IP Lookup API:
 
 ## Support & Community
 
-- 🏠 **API Home**: [IP Lookup API](https://iplookup.apiverve.com?utm_source&#x3D;github&amp;utm_medium&#x3D;readme)
+- 🏠 **API Home**: [IP Lookup API](https://apiverve.com/marketplace/iplookup?utm_source&#x3D;github&amp;utm_medium&#x3D;referral&amp;utm_content&#x3D;readme)
 - 💬 **Support**: [https://apiverve.com/contact](https://apiverve.com/contact)
 - 🐛 **Issues**: [GitHub Issues](../../issues)
 - 📖 **Documentation**: [https://docs.apiverve.com](https://docs.apiverve.com)

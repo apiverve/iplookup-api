@@ -2,10 +2,9 @@ openapi: 3.0.4
 info:
   title: IP Lookup
   description: >-
-    IP Lookup resolves an IP address to its geographic location. It returns the
-    country, region, city, coordinates, postal code, timezone and continent,
-    along with an accuracy radius and an EU-membership flag for compliance
-    routing.
+    IP Lookup is an IP address location API that resolves any IP to its country,
+    region, timezone and continent. Paid plans add city, coordinates, postal
+    code, an accuracy radius and an EU-membership flag for compliance routing.
   termsOfService: https://apiverve.com/terms/
   contact:
     name: APIVerve Support
@@ -20,7 +19,7 @@ servers:
 paths:
   /v1/iplookup:
     get:
-      summary: Lookup IP
+      summary: IP Lookup
       description: Lookup the details and location of an IP address
       operationId: iplookup
       parameters:
@@ -69,6 +68,8 @@ paths:
                   postalCode: '64106'
                   accuracyRadius: 20
                   isEU: false
+                  asn: AS11427
+                  asnName: TWC-11427-TEXAS
         '401':
           description: Your request was not authorized, or your API Key was invalid
         '404':
