@@ -38,6 +38,8 @@ declare module '@apiverve/iplookup' {
       postalCode:     null | string;
       accuracyRadius: number | null;
       isEU:           boolean | null;
+      asn:            null | string;
+      asnName:        null | string;
   }
 
   export default class iplookupWrapper {
