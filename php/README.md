@@ -1,6 +1,6 @@
 # IP Lookup API - PHP Package
 
-IP Lookup resolves an IP address to its geographic location. It returns the country, region, city, coordinates, postal code, timezone and continent, along with an accuracy radius and an EU-membership flag for compliance routing.
+IP Lookup is an IP address location API that resolves any IP to its country, region, timezone and continent. Paid plans add city, coordinates, postal code, an accuracy radius and an EU-membership flag for compliance routing.
 
 ## Installation
 
@@ -84,7 +84,9 @@ $client = new Client(
     ],
     "postalCode": "64106",
     "accuracyRadius": 20,
-    "isEU": false
+    "isEU": false,
+    "asn": "AS11427",
+    "asnName": "TWC-11427-TEXAS"
   }
 }
 ```
@@ -96,11 +98,11 @@ $client = new Client(
 
 ## Documentation
 
-For more information, visit the [API Documentation](https://docs.apiverve.com/ref/iplookup?utm_source=packagist&utm_medium=readme).
+For more information, visit the [API Documentation](https://docs.apiverve.com/ref/iplookup?utm_source=packagist&utm_medium=referral&utm_content=readme).
 
 ## Support
 
-- Website: [https://iplookup.apiverve.com?utm_source=php&utm_medium=readme](https://iplookup.apiverve.com?utm_source=php&utm_medium=readme)
+- Website: [https://apiverve.com/marketplace/iplookup?utm_source=php&utm_medium=referral&utm_content=readme](https://apiverve.com/marketplace/iplookup?utm_source=php&utm_medium=referral&utm_content=readme)
 - Email: hello@apiverve.com
 
 ## License
