@@ -1,6 +1,6 @@
 {
   "name": "@apiverve/iplookup",
-  "version": "1.2.2",
+  "version": "1.2.3",
   "description": "IP Lookup is an IP address location API that resolves any IP to its country, region, timezone and continent. Paid plans add city, coordinates, postal code, an accuracy radius and an EU-membership flag for compliance routing.",
   "main": "index.js",
   "types": "index.d.ts",
