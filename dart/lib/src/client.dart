@@ -46,7 +46,7 @@ final _formatPatterns = {
 
 /// IP Lookup API client.
 ///
-/// For more information, visit: https://iplookup.apiverve.com?utm_source=dart&utm_medium=readme
+/// For more information, visit: https://apiverve.com/marketplace/iplookup?utm_source=dart&utm_medium=referral&utm_content=readme
 ///
 /// Parameters:
 /// * [ip] (required) - The IP address for which you want to get the location data (e.g., 173.172.81.20) [format: ip]

@@ -1,7 +1,7 @@
 name: apiverve_iplookup
-description: IP Lookup is a simple tool for looking up the location of an IP address. It returns the country, city, and more.
-version: 1.1.14
-homepage: https://iplookup.apiverve.com?utm_source=dart&utm_medium=homepage
+description: "IP Lookup is an IP address location API that resolves any IP to its country, region, timezone and continent, with the country's currency, calling code, languages and flag and the local time there. Private and reserved addresses are labelled instead of failing. Paid plans add city, coordinates, postal code, an accuracy radius, an EU-membership flag, ASN and the reverse DNS hostname."
+version: 1.2.4
+homepage: https://apiverve.com/marketplace/iplookup?utm_source=dart&utm_medium=referral&utm_content=homepage
 repository: https://github.com/apiverve/iplookup-api/tree/main/dart
 
 environment:
