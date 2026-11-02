@@ -76,6 +76,60 @@ namespace APIVerve.API.IPLookup
 
         [JsonProperty("asnName")]
         public string AsnName { get; set; }
+
+        [JsonProperty("ipVersion")]
+        public long? IpVersion { get; set; }
+
+        [JsonProperty("isPublic")]
+        public bool? IsPublic { get; set; }
+
+        [JsonProperty("reservedType")]
+        public object ReservedType { get; set; }
+
+        [JsonProperty("countryCode3")]
+        public string CountryCode3 { get; set; }
+
+        [JsonProperty("capital")]
+        public string Capital { get; set; }
+
+        [JsonProperty("callingCode")]
+        public string CallingCode { get; set; }
+
+        [JsonProperty("currency")]
+        public Currency Currency { get; set; }
+
+        [JsonProperty("languages")]
+        public string[] Languages { get; set; }
+
+        [JsonProperty("flag")]
+        public string Flag { get; set; }
+
+        [JsonProperty("tld")]
+        public string Tld { get; set; }
+
+        [JsonProperty("utcOffset")]
+        public string UtcOffset { get; set; }
+
+        [JsonProperty("localTime")]
+        public DateTimeOffset? LocalTime { get; set; }
+
+        [JsonProperty("isDst")]
+        public bool? IsDst { get; set; }
+
+        [JsonProperty("hostname")]
+        public string Hostname { get; set; }
+    }
+
+    public partial class Currency
+    {
+        [JsonProperty("code")]
+        public string Code { get; set; }
+
+        [JsonProperty("name")]
+        public string Name { get; set; }
+
+        [JsonProperty("symbol")]
+        public string Symbol { get; set; }
     }
 
     public partial class Premium
