@@ -40,6 +40,26 @@ declare module '@apiverve/iplookup' {
       isEU:           boolean | null;
       asn:            null | string;
       asnName:        null | string;
+      ipVersion:      number | null;
+      isPublic:       boolean | null;
+      reservedType:   null;
+      countryCode3:   null | string;
+      capital:        null | string;
+      callingCode:    null | string;
+      currency:       Currency;
+      languages:      (null | string)[];
+      flag:           null | string;
+      tld:            null | string;
+      utcOffset:      null | string;
+      localTime:      Date | null;
+      isDst:          boolean | null;
+      hostname:       null | string;
+  }
+  
+  interface Currency {
+      code:   null | string;
+      name:   null | string;
+      symbol: null | string;
   }
 
   export default class iplookupWrapper {

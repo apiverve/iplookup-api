@@ -1,6 +1,6 @@
 # IP Lookup API
 
-IP Lookup is an IP address location API that resolves any IP to its country, region, timezone and continent. Paid plans add city, coordinates, postal code, an accuracy radius and an EU-membership flag for compliance routing.
+IP Lookup is an IP address location API that resolves any IP to its country, region, timezone and continent, with the country's currency, calling code, languages and flag and the local time there. Private and reserved addresses are labelled instead of failing. Paid plans add city, coordinates, postal code, an accuracy radius, an EU-membership flag, ASN and the reverse DNS hostname.
 
 [![npm version](https://img.shields.io/npm/v/@apiverve/iplookup.svg)](https://www.npmjs.com/package/@apiverve/iplookup)
 
@@ -122,21 +122,41 @@ async function makeRequest() {
     "ip": "173.172.81.20",
     "country": "US",
     "countryName": "United States",
-    "region": "MO",
-    "regionName": "Missouri",
-    "city": "Kansas City",
+    "region": "NE",
+    "regionName": "Nebraska",
+    "city": "Lincoln",
     "continent": "NA",
     "continentName": "North America",
     "timezone": "America/Chicago",
     "coordinates": [
-      39.0831,
-      -94.5853
+      40.7579,
+      -96.6962
     ],
-    "postalCode": "64106",
+    "postalCode": "68512",
     "accuracyRadius": 20,
     "isEU": false,
     "asn": "AS11427",
-    "asnName": "TWC-11427-TEXAS"
+    "asnName": "TWC-11427-TEXAS",
+    "ipVersion": 4,
+    "isPublic": true,
+    "reservedType": null,
+    "countryCode3": "USA",
+    "capital": "Washington D.C.",
+    "callingCode": "+1",
+    "currency": {
+      "code": "USD",
+      "name": "United States dollar",
+      "symbol": "$"
+    },
+    "languages": [
+      "English"
+    ],
+    "flag": "🇺🇸",
+    "tld": ".us",
+    "utcOffset": "-05:00",
+    "localTime": "2026-10-26T20:28:33-05:00",
+    "isDst": true,
+    "hostname": "syn-173-172-081-020.res.spectrum.com"
   }
 }
 ```
