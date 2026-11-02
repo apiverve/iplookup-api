@@ -1,10 +1,10 @@
 [project]
 name = "apiverve-iplookup"
-version = "1.2.3"
+version = "1.2.4"
 authors = [
   { name="APIVerve", email="hello@apiverve.com" },
 ]
-description = "IP Lookup is an IP address location API that resolves any IP to its country, region, timezone and continent. Paid plans add city, coordinates, postal code, an accuracy radius and an EU-membership flag for compliance routing."
+description = "IP Lookup is an IP address location API that resolves any IP to its country, region, timezone and continent, with the country's currency, calling code, languages and flag and the local time there. Private and reserved addresses are labelled instead of failing. Paid plans add city, coordinates, postal code, an accuracy radius, an EU-membership flag, ASN and the reverse DNS hostname."
 keywords = ["geo ip api", "ip to geo api", "ip address location api", "ip geolocation api", "ip lookup api"]
 readme = "README.md"
 requires-python = ">=3.9"
